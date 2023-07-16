@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2");
+  font-display: swap;
+}
+
+body
+ {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  background-color: #FEAFC3;
+ }
+
+ /* Навигация */
+
+ .site-navigation-link {
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+ }
+
+.user-navigation-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(252, 252, 252, 0.3);
+  color: inherit;
+}
+
+.header-phone {
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Карусель */
+
+.slide-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.slide-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+  background-color: #fcfcfc;
+}
+
+/* Спецпредложения */
+
+.special-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.special-item {
+  background-color: #ff7799;
+}
+
+.special-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* Популярное */
+
+.popular-cards-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.card-item {
+  background-color: #fcfcfc;
+}
+
+.card-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card-price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card-add-basket {
+  background-color: #ff2f64;
+  color: #fcfcfc;
+}
+
+/* О компании */
+
+.about-wrapper {
+  background-image: url(../image/wafel.jpg);
+  background-repeat: no-repeat;
+}
+
+.about {
+  background-color: #ffffff;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.about-item {
+  color: #565c66;
+}
+
+/* Новости */
+
+.news {
+  background-color: #ffffff;
+  background-image: url(../image/news_background.jpg);
+  background-repeat: no-repeat;
+}
+
+.news-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.news-paragraph {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* Подписка */
+
+.subscribe-wrapper {
+  background-image: url(../image/subscribe.svg);
+  background-repeat: no-repeat;
+}
+
+.subscribe {
+  background-color: #ffffff;
+}
+
+.pink-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+}
+
+/* Досктавка */
+
+.delivery {
+  background-color: #fcfcfc;
+  background-image: url(../image/delivery_background.jpg);
+  background-repeat: no-repeat;
+}
+
+.delivery-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.delivery-form-container {
+  background-color: #fcfcfc;
+}
+
+.delivery-form {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* О компании */
+
+.feedback {
+  background-image: url(../image/feedback_background.jpg);
+  background-repeat: no-repeat;
+}
+
+.contacts {
+  background-color: #fcfcfc;
+}
+
+.contacts-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.contacts-address {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.contacts-paragraph {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-button {
+  text-decoration: none;
+}
+
+/* Подвал */
+
+.footer-links-item a {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.footer-links-item:first-child {
+  font-weight: 700;
+}
+
+.htmlacademy-link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.copyright span {
+  text-decoration: underline;
+}
+
+/* Каталог */
+
+.breadcrumbs {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs-item:last-child {
+  text-decoration: underline;
+}
+
+.catalog-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.catalog-filter-group, .catalog-filter-fillers {
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.filter-button {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.pagination a {
+  line-height: 20px;
+  color:#2d3440;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #fcfcfc;;
+}
