@@ -22,23 +22,61 @@
   font-display: swap;
 }
 
-body
- {
-  font-family: "Inter", sans-serif;
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Inter", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #2d3440;
-  background-color: #FEAFC3;
- }
+  background-color: #feafc3;
+}
 
  /* Навигация */
 
- .site-navigation-link {
+.page-header {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.site-navigation {
+  margin-right: auto;
+  margin-left: 16px;
+}
+
+.site-navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  margin-right: auto;
+  list-style: none;
+}
+
+.site-navigation-link {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
   color: inherit;
- }
+}
+
+.header-phone {
+  width: 148px;
+  /* margin-left: auto; */
+}
+
+.user-navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 267px;
+  list-style: none;
+}
 
 .user-navigation-link {
   font-size: 14px;
@@ -56,6 +94,17 @@ body
   color: inherit;
 }
 
+/* Основной контент */
+
+.main-wrapper {
+  flex-grow: 1;
+}
+
+.page-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 /* Карусель */
 
 .slide-title {
@@ -69,6 +118,26 @@ body
   line-height: 24px;
 }
 
+.slider-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+  list-style: none;
+}
+
+.slider-item {
+  display: flex;
+  align-items: start;
+}
+
+.slide-title {
+  width: 470px;
+}
+
+.slide-paragraph {
+  width: 429px;
+}
+
 .button {
   font-weight: 700;
   line-height: 20px;
@@ -77,22 +146,68 @@ body
   background-color: #fcfcfc;
 }
 
+.pagination-and-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-pagination {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
 /* Спецпредложения */
 
 .special-title {
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
+  text-align: center;
+  width: 434px;
+  margin: 0 auto;
+}
+
+.special-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .special-item {
   background-color: #ff7799;
+  box-sizing: border-box;
+  width: 570px;
+  padding: 36px;
+  padding-right: 200px;
+}
+
+.special-content-wrapper {
+  width: 304px;
 }
 
 .special-item-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Популярное */
@@ -101,16 +216,41 @@ body
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
+  text-align: center;
+  width: 527px;
+  margin: 0 auto;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .card-item {
   background-color: #fcfcfc;
+  width: 270px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-item-wrapper {
+  width: 190px;
+  margin: 0 auto;
 }
 
 .card-item-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card-price {
@@ -126,30 +266,48 @@ body
 /* О компании */
 
 .about-wrapper {
-  background-image: url(../image/wafel.jpg);
+  background-image: url("../image/wafel.jpg");
   background-repeat: no-repeat;
+  padding: 24px;
 }
 
 .about {
   background-color: #ffffff;
+  padding: 56px 40px;
 }
 
 .about-title {
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
+  text-align: center;
+}
+
+.about-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about-item {
   color: #565c66;
+  list-style: none;
+  width: 505px;
 }
 
 /* Новости */
 
+.news-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .news {
   background-color: #ffffff;
-  background-image: url(../image/news_background.jpg);
+  background-image: url("../image/news-background.jpg");
   background-repeat: no-repeat;
+  width: 570px;
 }
 
 .news-title {
@@ -162,13 +320,16 @@ body
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  width: 303px;
 }
 
 /* Подписка */
 
 .subscribe-wrapper {
-  background-image: url(../image/subscribe.svg);
+  background-image: url("../image/subscribe.png");
   background-repeat: no-repeat;
+  width: 570px;
+  /* padding: 6px; */
 }
 
 .subscribe {
@@ -187,8 +348,10 @@ body
 
 .delivery {
   background-color: #fcfcfc;
-  background-image: url(../image/delivery_background.jpg);
+  background-image: url("../image/delivery-background.jpg");
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
 }
 
 .delivery-title {
@@ -197,11 +360,28 @@ body
   line-height: 46px;
 }
 
-.delivery-form-container {
+.delivery-wrapper {
+  width: 371px;
+  margin-left: 100px;
+}
+
+.delivery-form-wrapper {
   background-color: #fcfcfc;
+  width: 500px;
+  margin-right: 64px;
+}
+
+.delivery-form-paragraph {
+  width: 380px;
+  padding-left: 40px;
 }
 
 .delivery-form {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.form-label {
   font-weight: 700;
   line-height: 20px;
 }
@@ -209,12 +389,19 @@ body
 /* О компании */
 
 .feedback {
-  background-image: url(../image/feedback_background.jpg);
+  background-image: url("../image/feedback-background.jpg");
   background-repeat: no-repeat;
 }
 
 .contacts {
   background-color: #fcfcfc;
+  width: 343px;
+  margin-left: 64px;
+}
+
+.contacts-wrapper {
+  width: 220px;
+  margin: 0 auto;
 }
 
 .contacts-title {
@@ -247,6 +434,29 @@ body
 }
 
 /* Подвал */
+
+.page-footer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer-links-list {
+  width: 356px;
+  padding: 0;
+  list-style: none;
+}
 
 .footer-links-item a {
   font-size: 14px;
@@ -294,16 +504,74 @@ body
   line-height: 46px;
 }
 
-.catalog-filter-group, .catalog-filter-fillers {
+.catalog-filter {
+  width: 823px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filters {
   font-size: 14px;
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-group {
+  width: 196px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter-price {
+  width: 196px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter-fat {
+  width: 383px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-fat-list {
+  list-style: none;
+  display: flex;
+}
+
+.catalog-filter-fillers {
+  width: 604px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-fillers-list {
+  list-style: none;
+  display: flex;
 }
 
 .filter-button {
   font-size: 14px;
   font-weight: 700;
   background-color: rgba(252, 252, 252, 0.3);
+  width: 185px;
+  margin-right: 18px;
+}
+
+.pagination-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
 }
 
 .pagination a {
