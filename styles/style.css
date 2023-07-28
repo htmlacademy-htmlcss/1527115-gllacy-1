@@ -723,9 +723,9 @@ body {
 
 /* Пагинация */
 
-.bagination-show-more {
-  /* margin-right: auto; */
-}
+/* .bagination-show-more {
+  margin-right: auto;
+} */
 
 .pagination-block {
   display: flex;
