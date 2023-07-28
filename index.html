@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-container">
       <!-- Шапка -->
       <div class="logo-wrapper">
         <a href="#">
@@ -43,7 +43,7 @@
     </header>
     <!-- Основной блок -->
     <main class="main-wrapper main">
-      <div class="page-wrapper">
+      <div class="page-container">
         <h1 class="visually-hidden">Магазин мороженого «Глеси»</h1>
         <!-- Карусель -->
         <section class="section-slider">
@@ -89,34 +89,40 @@
           <div class="pagination-and-social">
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 товар</span>
-                </button>
+                <div class="slider-pagination-button-current">
+                  <button class="slider-pagination-button " type="button">
+                    <span class="visually-hidden">1 товар</span>
+                  </button>
+                </div>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 товар</span>
-                </button>
+                <div>
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 товар</span>
+                  </button>
+                </div>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 товар</span>
-                </button>
+                <div>
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 товар</span>
+                  </button>
+                </div>
               </li>
             </ol>
             <ul class="social-list">
               <li class="social-item">
-                <a href="#" class="button social-button">
+                <a href="#" class="social-button">
                   <span class="visually-hidden">Телеграм</span>
                 </a>
               </li>
               <li class="social-item">
-                <a href="#" class="button social-button">
+                <a href="#" class="social-button">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="social-item">
-                <a href="#" class="button social-button">
+                <a href="#" class="social-button">
                   <span class="visually-hidden">Инстаграм</span>
                 </a>
               </li>
@@ -160,7 +166,7 @@
                 <p class="card-item-paragraph">Сливочное мороженое с малиновым джемом</p>
                 <div class="price-and-basket">
                   <b class="card-price">310 ₽/кг</b>
-                  <a href="#" class="button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
+                  <a href="#" class="pink-button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
                 </div>
               </div>
             </li>
@@ -177,7 +183,7 @@
                 <p class="card-item-paragraph">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="price-and-basket">
                   <b class="card-price">340 ₽/кг</b>
-                  <a href="#" class=" button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
+                  <a href="#" class=" pink-button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
                 </div>
               </div>
             </li>
@@ -194,7 +200,7 @@
                 <p class="card-item-paragraph">Крем-брюле с черничным джемом</p>
                 <div class="price-and-basket">
                   <b class="card-price">330 ₽/кг</b>
-                  <a href="#" class="button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
+                  <a href="#" class="pink-button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
                 </div>
               </div>
             </li>
@@ -211,7 +217,7 @@
                 <p class="card-item-paragraph">Ванильный пломбир со сладкой посыпкой</p>
                 <div class="price-and-basket">
                   <b class="card-price">320 ₽/кг</b>
-                  <a href="#" class="button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
+                  <a href="#" class="pink-button card-add-basket"><span class="visually-hidden">Добавитиь в корзину</span></a>
                 </div>
               </div>
             </li>
@@ -253,7 +259,7 @@
               <form action="https://echo.htmlacademy.ru" method="post" class="subscribe-form">
                 <label for="subscribe-email" class="visually-hidden">Email</label>
                 <input class="field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
-                <button class="pink-button subscribe-button" type="submit">Отправить</button>
+                <button class="button pink-button subscribe-button" type="submit">Отправить</button>
               </form>
             </section>
           </div>
@@ -279,7 +285,7 @@
                 <label class="form-label" for="delivery-addres">Адрес</label>
                 <input type="text" id="delivery-addres" name="delivery-addres" placeholder="ул. Большая Конюшенная, 19/8">
               </div>
-              <button class="pink-button" type="submit">Отправить</button>
+              <button class="button pink-button" type="submit">Отправить</button>
             </form>
           </section>
         </section>
@@ -289,32 +295,32 @@
             <div class="contacts-wrapper">
               <h2 class="contacts-title">Адрес главного офиса и офлайн-магазина:</h2>
               <p class="contacts-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-              <p>Для заказов по телефону:</p>
+              <p class="contacts-phone-paragraph">Для заказов по телефону:</p>
               <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               <p class="contacts-paragraph">(с 10 до 20 ежедневно)</p>
-              <a href="#" class="pink-button contacts-button">Форма обратной связи</a>
+              <a href="#" class="button pink-button contacts-button">Форма обратной связи</a>
             </div>
           </section>
         </section>
       </div>
     </main>
     <!-- Подвал -->
-    <footer class="page-footer">
+    <footer class="page-footer page-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="#" class="button">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-button">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="footer-social-item">
-            <a href="#" class="button">
+          <li class="social-item">
+            <a href="#" class="social-button">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="footer-social-item">
-            <a href="#" class="button">
+          <li class="social-item">
+            <a href="#" class="social-button">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -322,12 +328,14 @@
       </section>
       <section class="footer-links">
         <ul class="footer-links-list">
-          <li class="footer-links-item">
+          <li class="footer-links-item activ-link">
             <a href="#" class="footer-link">Для поставщиков</a>
           </li>
           <li class="footer-links-item">
             <a href="#" class="footer-link">О производстве</a>
           </li>
+        </ul>
+        <ul class="footer-links-list">
           <li class="footer-links-item">
             <a href="#" class="footer-link">Наши документы</a>
           </li>
