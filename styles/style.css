@@ -49,7 +49,7 @@ body {
   overflow: hidden;
 }
 
- /* Навигация */
+/* Навигация */
 
 .section-slider {
   margin-bottom: 80px;
@@ -102,7 +102,7 @@ body {
 .user-navigation-list {
   margin: 0;
   padding: 0;
-  width: 267px;
+  width: 297px;
   display: flex;
   list-style: none;
 }
@@ -116,8 +116,24 @@ body {
   color: inherit;
   margin-left: 16px;
   padding: 6px 16px;
-  min-width: 16px;
-  min-height: 16px;
+  border-radius: 16px;
+  height: 32px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.search {
+  padding: 8px;
+}
+
+.navigation-icon {
+  position: relative;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #2d3440;
 }
 
 /* Основной контент */
@@ -167,6 +183,15 @@ body {
   width: 429px;
 }
 
+.slider-button {
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 9px;
+  border: 2px solid #fcfcfc;
+  border-radius: 19px;
+  display: inline-block;
+  height: 38px;
+}
+
 .button {
   font-weight: 700;
   line-height: 20px;
@@ -189,6 +214,7 @@ body {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .slider-pagination-button {
@@ -211,6 +237,7 @@ body {
 
 .social-list {
   padding: 0;
+  margin: 0;
   display: flex;
   list-style: none;
   gap: 16px;
@@ -219,7 +246,6 @@ body {
 .social-item {
   width: 24px;
   height: 24px;
-  outline: 1px solid #fff;  /*Временное свойство*/
 }
 
 .social-button {
@@ -257,6 +283,19 @@ body {
   width: 570px;
   padding: 36px;
   padding-right: 200px;
+  border-radius: 16px;
+}
+
+.raspberries {
+  background-image: url(../image/raspberries.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.marshmello {
+  background-image: url(../image/marshmello.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .special-content-wrapper {
@@ -279,7 +318,7 @@ body {
 
 /* Популярное */
 
-.popular-cards{
+.popular-cards {
   margin-bottom: 80px;
 }
 
@@ -305,6 +344,9 @@ body {
   background-color: #fcfcfc;
   text-align: center;
   list-style: none;
+  border-radius: 8px;
+  margin-top: 51px;
+  padding-top: 117px;
 }
 
 .card-item-wrapper {
@@ -312,15 +354,36 @@ body {
   margin: 0 auto;
 }
 
+.card-image-wrapper {
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
+  /* display: inline-block; */
+}
+
+.card-image-wrapper .card-link {
+  position: relative;
+}
+
+.card-item-image {
+  border-radius: 84px;
+  display: block;
+  position: absolute;
+  right: -85px;
+  bottom: 16px;
+}
+
 .card-item-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin-top: 16px;
 }
 
 .card-link {
   text-decoration: none;
   color: inherit;
+  outline: 2px;
 }
 
 .card-price {
@@ -333,6 +396,17 @@ body {
   color: #fcfcfc;
   min-width: 32px;
   min-height: 32px;
+  border-radius: 16px;
+}
+
+.card-icon {
+  position: relative;
+  top: 8px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #fcfcfc;
 }
 
 .price-and-basket {
@@ -350,11 +424,13 @@ body {
   background-repeat: no-repeat;
   padding: 24px;
   margin-bottom: 80px;
+  border-radius: 16px;
 }
 
 .about {
   background-color: #ffffff;
   padding: 56px 40px 16px;
+  border-radius: 16px;
 }
 
 .about-title {
@@ -379,6 +455,32 @@ body {
   list-style: none;
   width: 505px;
   margin-bottom: 40px;
+  padding-left: 64px;
+  box-sizing: border-box;
+}
+
+.ice-cream {
+  background-image: url("../image/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.sheet {
+  background-image: url("../image/sheet.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.cow {
+  background-image: url("../image/cow.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.thermometer {
+  background-image: url("../image/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 /* Новости */
@@ -394,6 +496,7 @@ body {
   background-image: url("../image/news-background.jpg");
   background-repeat: no-repeat;
   width: 570px;
+  border-radius: 16px;
 }
 
 .news-wrapper {
@@ -431,6 +534,7 @@ body {
   background-color: #ffffff;
   padding: 26px;
   min-width: 332px;
+  border-radius: 16px;
 }
 
 .subscribe-paragraph {
@@ -465,6 +569,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
+  border-radius: 16px;
 }
 
 .delivery-wrapper {
@@ -492,8 +597,8 @@ body {
   margin-top: 64px;
   margin-right: 64px;
   margin-bottom: 64px;
+  border-radius: 8px;
 }
-
 
 .delivery-form {
   display: grid;
@@ -549,6 +654,7 @@ body {
   background-image: url("../image/feedback-background.jpg");
   background-repeat: no-repeat;
   display: flex;
+  border-radius: 16px;
 }
 
 .contacts {
@@ -557,6 +663,7 @@ body {
   margin-left: 64px;
   margin-top: 64px;
   margin-bottom: 64px;
+  border-radius: 8px;
 }
 
 .contacts-wrapper {
@@ -677,16 +784,34 @@ body {
 
 .breadcrumbs-item {
   margin-right: 28px;
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  content: url(../image/chevrons-right.svg);
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: -20px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadcrumbs-item:last-child {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   margin-right: 0;
 }
 
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link {
+  border-bottom: 1px solid #2d3440;
+  box-sizing: border-box;
 }
 
 /* Фильтр */
@@ -787,7 +912,7 @@ body {
 
 .pagination-link {
   line-height: 20px;
-  color:#2d3440;
+  color: #2d3440;
   text-decoration: none;
   display: flex;
   box-sizing: border-box;
